@@ -1,0 +1,265 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Calculator API",
+    "description": "Documentation for the Calculator API."
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/doc": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/users/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/signup": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "password": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/login": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                },
+                "password": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/add/{number1}/{number2}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "number2",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/subtract/{number1}/{number2}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "number2",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/multiply/{number1}/{number2}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "number2",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/divide/{number1}/{number2}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "number2",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/previous/add/{number1}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/previous/subtract/{number1}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/previous/multiply/{number1}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/previous/divide/{number1}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    }
+  }
+}
